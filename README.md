@@ -3,3 +3,5 @@ The Caloric Intake Calculator is the perfect tool to help you track and manage y
 
 ## Tech Stack
 EJS, JavaScript, Node.js, Express.js
+
+<img src="/public/img/Calculator-UI.png">
