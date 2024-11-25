@@ -1,16 +1,17 @@
 <!doctype html>
 <html>
 <head>
-    <title>Daily Caloric Intake</title>
+    <title>Daily Caloric Intake Calculator</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/Savage-Authentication/savage-auth/public/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+
 <div class="container">
 
     <div class="page-header text-center">
-        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <h1><span class="fa fa-anchor page-title"></span> Profile Page</h1>
         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
     </div>
 
@@ -118,7 +119,7 @@
       <span class="close-btn">&times;</span>
       <h2>Update Caloric Intake</h2>
       
-      <form id="update-caloric-intake-form">
+      <form action="/api/user/update-caloric-intake" id="update-caloric-intake-form" method="POST">
 
         <!--BMR start-->
       <!--Age- drop down (years)-->
@@ -202,7 +203,7 @@
         <option value="gain-weight-half-pound">Gain weight: 0.5 lbs per week (smaller caloric surplus of ~250 calories/day)</option>
       </select>
 
-        <button type="submit">Update</button>
+        <button type="submit" class="update-button">Update</button>
       </form>
     </div>
   </div>
