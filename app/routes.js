@@ -76,6 +76,7 @@ const { ObjectId } = require('mongodb');
       // calculate TDEE based on activity level
       const tdee = bmr * activityFactor;
 
+      console.log('This is the TDEE:', tdee)
       console.log('Goal Action:', goalAction);
 
       // adjustigg for weight goal
@@ -84,16 +85,16 @@ const { ObjectId } = require('mongodb');
           case 'maintain-goal':
               dailyCalories = tdee;
               break;
-          case 'lose-goal-one':
+          case 'lose-goal-one-to-two':
               dailyCalories = tdee - 500;
               break;
-          case 'lose-goal-half':
+          case 'lose-goal-half-pound':
               dailyCalories = tdee - 250;
               break;
-          case 'gain-weight-one':
+          case 'gain-weight-one-to-two':
               dailyCalories = tdee + 500;
               break;
-          case 'gain-weight-half':
+          case 'gain-weight-half-pound':
               dailyCalories = tdee + 250;
               break;
           default:

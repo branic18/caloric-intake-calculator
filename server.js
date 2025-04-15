@@ -14,6 +14,7 @@ var bodyParser   = require('body-parser'); // See whats coming with req
 var session      = require('express-session'); // Keep logged in session alive
 
 var configDB = require('./config/database.js');
+// var configDB = require('./.env');
 
 const methodOverride = require('method-override')
 
