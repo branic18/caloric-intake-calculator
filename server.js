@@ -15,6 +15,7 @@ var bodyParser   = require('body-parser'); // See whats coming with req
 var session      = require('cookie-session'); // This is to deploy it
 
 var configDB = require('./config/database.js');
+// var configDB = require('./.env');
 
 const methodOverride = require('method-override')
 
